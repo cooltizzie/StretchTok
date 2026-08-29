@@ -462,8 +462,8 @@ window.addEventListener('keydown', (e) => {
 // Point this at your deployed Cloudflare Worker (see the tutorial). During
 // local testing before you've deployed anything, you can temporarily point
 // this straight at your Render server's URL instead — just note that skips
-// the Worker layer entirely.
-const EXPORT_ENDPOINT = 'https://stretchtok-proxy.YOUR-SUBDOMAIN.workers.dev/export';
+// the Worker layer entirely. 
+const EXPORT_ENDPOINT = 'https://stretchtok.cooltizzie.workers.dev/export';
 
 exportBtn.addEventListener('click', async () => {
   if (isProcessing || fileQueue.length === 0) return;
