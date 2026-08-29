@@ -1,0 +1,18 @@
+{
+  "name": "stretchtok-server",
+  "version": "1.0.0",
+  "description": "ffmpeg transcode microservice for StretchTok, deployed to Render",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^2.0.0",
+    "cors": "^2.8.5"
+  }
+}
