@@ -16,9 +16,7 @@
  * swap RENDER_SERVER_URL below for a container binding and skip Render
  * entirely — the client-facing contract (POST /export) stays the same.
  */
-
-const RENDER_SERVER_URL = 'https://YOUR-RENDER-APP.onrender.com'; // set after deploying render-server
-
+const RENDER_SERVER_URL = 'https://YOUR-RENDER-APP.onrender.com';
 const MAX_UPLOAD_BYTES = 500 * 1024 * 1024; // keep in sync with server.js's multer limit
 
 const CORS_HEADERS = {
