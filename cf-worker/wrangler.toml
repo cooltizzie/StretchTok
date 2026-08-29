@@ -1,0 +1,11 @@
+name = "stretchtok-proxy"
+main = "worker.js"
+compatibility_date = "2026-08-27"
+
+# Free Workers plan limits (as of writing): 100,000 requests/day,
+# 10ms CPU time per request on average. This Worker does almost no CPU work
+# itself (it just streams bytes through), so it comfortably fits.
+#
+# compatibility_date should be bumped to whatever "today" is when you first
+# deploy — Cloudflare recommends this and it's safe to leave as-is
+# afterward; old compatibility dates remain supported indefinitely.
